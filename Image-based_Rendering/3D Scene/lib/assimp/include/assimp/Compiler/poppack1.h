@@ -18,4 +18,4 @@
 #endif
 #undef PACK_STRUCT
 
-#undef AI_PUSHPACK_IS_DEFINED
+#undef AI_PUSHPACK_IS_DEFINEDs

@@ -45,83 +45,83 @@ where ![img](http://latex.codecogs.com/svg.latex?%5Cboldsymbol%7B%5Cbar%7Bx%7D%7
 
 ## 2D Transformations
 
-**Translation**
+**Translation** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7B%7Bx%7D%27%7D%20%3D%20%5Cboldsymbol%7Bx%7D%20+%20%5Cboldsymbol%7Bt%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cboldsymbol%7BI%7D%20%26%20%5Cboldsymbol%7Bt%7D%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D) \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7B%7B%5Cbar%7Bx%7D%7D%27%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cboldsymbol%7BI%7D%20%26%20%5Cboldsymbol%7Bt%7D%20%5C%5C%20%5Cboldsymbol%7B0%7D%5ET%20%26%201%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D)
 
-**Rotation & Translation**
+**Rotation & Translation** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7B%7Bx%7D%27%7D%20%3D%20%5Cboldsymbol%7BRx%7D%20+%20%5Cboldsymbol%7Bt%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cboldsymbol%7BR%7D%20%26%20%5Cboldsymbol%7Bt%7D%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D) \
 where ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7BR%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20cos%5CTheta%20%26%20-sin%5CTheta%5C%5C%20sin%5CTheta%20%26%20cos%5CTheta%20%5Cend%7Bbmatrix%7D) \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7BR%7D%20%5Cboldsymbol%7BR%7D%5ET%20%3D%20%5Cboldsymbol%7BI%7D) and ![img](http://latex.codecogs.com/gif.latex?%5Cleft%20%7C%20%5Cboldsymbol%7BR%7D%20%5Cright%20%7C%20%3D%201)
 
-**Scaled Rotation**
+**Scaled Rotation** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7Bx%7D%27%20%3D%20s%5Cboldsymbol%7BRx%7D%20+%20%5Cboldsymbol%7Bt%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20s%5Cboldsymbol%7BR%7D%20%26%20%5Cboldsymbol%7Bt%7D%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20a%20%26%20-b%20%26%20t_x%5C%5C%20b%20%26%20a%20%26%20t_y%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D)
 
-**Affine**
+**Affine** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7Bx%7D%27%20%3D%20%5Cboldsymbol%7BA%5Cbar%7Bx%7D%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20a_%7B00%7D%20%26%20a_%7B01%7D%20%26%20a_%7B02%7D%5C%5C%20a_%7B10%7D%20%26%20a_%7B11%7D%20%26%20a_%7B12%7D%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D)
 
-**Projective**
+**Projective** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7B%5Ctilde%7Bx%7D%7D%27%20%3D%20%5Cboldsymbol%7B%5Ctilde%7BH%7D%5Ctilde%7Bx%7D%7D) \
 ![img](http://latex.codecogs.com/gif.latex?x%27%20%3D%20%5Cfrac%7Bh_%7B00%7Dx%20+%20h_%7B01%7Dy%20+%20h_%7B02%7D%7D%7Bh_%7B20%7Dx%20+%20h_%7B21%7Dy%20+%20h_%7B22%7D%7D) and ![img](http://latex.codecogs.com/gif.latex?y%27%20%3D%20%5Cfrac%7Bh_%7B10%7Dx%20+%20h_%7B11%7Dy%20+%20h_%7B12%7D%7D%7Bh_%7B20%7Dx%20+%20h_%7B21%7Dy%20+%20h_%7B22%7D%7D)
 
-**Co-Vectors**
+**Co-Vectors** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7B%5Ctilde%7Bl%7D%7D%27%20%5Ccdot%20%5Cboldsymbol%7B%5Ctilde%7Bx%7D%7D%27%20%3D%20%5Cboldsymbol%7B%5Ctilde%7Bl%7D%7D%27%5ET%20%5Cboldsymbol%7B%5Ctilde%7BH%7D%7D%20%5Cboldsymbol%7B%5Ctilde%7Bx%7D%7D%20%3D%20%28%5Cboldsymbol%7B%5Ctilde%7BH%7D%7D%5ET%20%5Cboldsymbol%7B%5Ctilde%7Bl%7D%7D%27%29%5ET%20%5Cboldsymbol%7B%5Ctilde%7Bx%7D%7D%20%3D%20%5Cboldsymbol%7B%5Ctilde%7Bl%7D%7D%20%5Ccdot%20%5Cboldsymbol%7B%5Ctilde%7Bx%7D%7D%20%3D%200) \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7B%5Ctilde%7Bl%7D%7D%27%20%3D%20%5Cboldsymbol%7B%5Ctilde%7BH%7D%7D%5E%7B-T%7D%20%5Cboldsymbol%7B%5Ctilde%7Bl%7D%7D)
 
-**Stretch/Squash**
+**Stretch/Squash** \
 ![img](http://latex.codecogs.com/gif.latex?x%27%20%3D%20s_xx%20+%20t_x) \
 ![img](http://latex.codecogs.com/gif.latex?y%27%20%3D%20s_yy%20+%20t_y)
 
-**Planar Surface Flow**
+**Planar Surface Flow** \
 ![img](http://latex.codecogs.com/gif.latex?x%27%20%3D%20a_0%20+%20a_1x%20+%20a_2y%20+%20a_6x%5E2%20+%20a_7xy) \
 ![img](http://latex.codecogs.com/gif.latex?y%27%20%3D%20a_3%20+%20a_4x%20+%20a_5y%20+%20a_7x%5E2%20+%20a_6xy)
 
-**Bilinear Interpolant**
+**Bilinear Interpolant** \
 ![img](http://latex.codecogs.com/gif.latex?x%27%20%3D%20a_0%20+%20a_1x%20+%20a_2y%20+%20a_6xy) \
 ![img](http://latex.codecogs.com/gif.latex?y%27%20%3D%20a_3%20+%20a_4x%20+%20a_5y%20+%20a_7xy)
 
 ## 3D Transformations
 
-**Translation**
+**Translation** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7Bx%7D%27%20%3D%20%5Cboldsymbol%7Bx%7D%20+%20%5Cboldsymbol%7Bt%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cboldsymbol%7BI%7D%20%26%20%5Cboldsymbol%7Bt%7D%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D)
 
-**Roation & Translation**
+**Roation & Translation** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7Bx%7D%27%20%3D%20%5Cboldsymbol%7BRx%7D%20+%20%5Cboldsymbol%7Bt%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cboldsymbol%7BR%7D%20%26%20%5Cboldsymbol%7Bt%7D%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D) \
 where ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7BRR%7D%5ET%20%3D%20%5Cboldsymbol%7BI%7D) and ![img](http://latex.codecogs.com/gif.latex?%5Cleft%20%7C%5Cboldsymbol%7BR%7D%20%5Cright%20%7C%20%3D%201) \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7Bx%7D%27%20%3D%20%5Cboldsymbol%7BR%7D%20%28%5Cboldsymbol%7Bx%7D%20-%20%5Cboldsymbol%7Bc%7D%29%20%3D%20%5Cboldsymbol%7BRx%7D%20-%20%5Cboldsymbol%7BRc%7D)
 
-**Scaled Rotation**
+**Scaled Rotation** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7Bx%7D%27%20%3D%20s%5Cboldsymbol%7BRx%7D%20+%20%5Cboldsymbol%7Bt%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20s%5Cboldsymbol%7BR%7D%20%26%20%5Cboldsymbol%7Bt%7D%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D)
 
-**Affine**
+**Affine** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7Bx%7D%27%20%3D%20%5Cboldsymbol%7BA%5Cbar%7Bx%7D%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20a_%7B00%7D%20%26%20a_%7B01%7D%20%26%20a_%7B02%7D%20%26%20a_%7B03%7D%20%5C%5C%20a_%7B10%7D%20%26%20a_%7B11%7D%20%26%20a_%7B12%7D%20%26%20a_%7B13%7D%20%5C%5C%20a_%7B20%7D%20%26%20a_%7B21%7D%20%26%20a_%7B22%7D%20%26%20a_%7B23%7D%20%5Cend%7Bbmatrix%7D%20%5Cboldsymbol%7B%5Cbar%7Bx%7D%7D)
 
-**Projective**
+**Projective** \
 ![img](http://latex.codecogs.com/gif.latex?%5Cboldsymbol%7B%5Ctilde%7Bx%7D%7D%27%20%3D%20%5Cboldsymbol%7B%5Ctilde%7BA%7D%5Ctilde%7Bx%7D%7D)
 
 ## 3D Rotations
 
-**Axis/Angle (exponential twist)**
+**Axis/Angle (exponential twist)** \
 
-**Unit Quaternions**
+**Unit Quaternions** \
 
 ## 3D to 2D Projections
 
-**Orthography & Para-Perspective**
+**Orthography & Para-Perspective** \
 
-**Perspective**
+**Perspective** \
 
-**Camera Intrinsics**
+**Camera Intrinsics** \
 
-**Fonal Lengths**
+**Fonal Lengths** \
 
-**Camera Matrix**
+**Camera Matrix** \
 
-**Projective Depth (plane-plus-parallex)**
+**Projective Depth (plane-plus-parallex)** \
 
-**Mapping (camera-to-camera)**
+**Mapping (camera-to-camera)** \
 
-**Object-Centered Projection**
+**Object-Centered Projection** \
 
 ## Lens Distortion
 

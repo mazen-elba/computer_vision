@@ -1,6 +1,6 @@
 """Human facial landmark detector based on Convolutional Neural Network"""
 
-import cv2
+from cv2 import cv2
 import numpy as np
 import tensorflow as tf
 
@@ -75,7 +75,7 @@ class MarkDetector:
         # load a Tensorflow saved model into memory
         self.graph = tf.Graph()
         config = tf.ConfigProto()
-        config.gpu_options.allow_growth = True
+        # config.gpu_options.allow_growth = True
         self.sess = tf.Session(graph=self.graph, config=config)
 
         # restore model from the savedModel file, that is exported by TensorFlow estimator

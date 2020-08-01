@@ -9,7 +9,7 @@ Finally, head pose is estimated by solving a PnP problem.
 from argparse import ArgumentParser
 from multiprocessing import Process, Queue
 
-import cv2
+from cv2 import cv2
 import numpy as np
 
 from markDetector import MarkDetector

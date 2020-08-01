@@ -213,5 +213,7 @@ def main(unusedArgv):
 
 
 if __name__ == "__main__":
-    tf.logging.set_verbosity(tf.logging.INFO)
-    tf.app.run(main)
+    # tf.logging.set_verbosity(tf.logging.INFO)
+    tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.INFO)
+    # tf.app.run(main)
+    tf.compat.v1.app.run(main)
